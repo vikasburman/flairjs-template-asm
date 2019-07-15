@@ -1,15 +1,13 @@
 {
-    "name": "flairjs-fabric",
-    "title": "Flair.js Fabric",
-    "description": "Foundation for True Object Oriented JavaScript Apps",
+    "name": "flairjs-template-asm",
+    "title": "FlairJS Assembly Project Template",
+    "description": "Boilerplate project structure for creating a flairjs assembly",
     "copyright": "(c) 2017-2019 Vikas Burman",
     "version": "0.9.3",
     "author": "Vikas Burman <vikasburman@gmail.com>",
     "keywords": [
         "javascript",
-        "oops",
-        "javascript-framework",
-        "isomorphic-javascript"
+        "oops"
     ],
     "engines": {
         "node": ">=10.0.0"
@@ -19,13 +17,11 @@
     "homepage": "https://flairjs.com",
     "repository": {
         "type": "git",
-        "url": "https://github.com/vikasburman/flairjs-fabric.git"
+        "url": "https://github.com/vikasburman/flairjs-template-asm.git"
     },
     "main": "./preamble.js",
     "scripts": {
         "build": "gulp build --options ./config/build.json",
-        "build-full": "gulp build --full --options ./config/build.json",
-        "build-quick": "gulp build --quick --options ./config/build.json",
         "test": "gulp test --TEST --options ./config/test.json",
         "package": "gulp package --options ./config/pack.json && npm pack ./publish/package/npm"
     },

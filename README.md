@@ -1,9 +1,9 @@
-[FlairJS Fabric](https://flairjs.com/fabric)
+[FlairJS Assembly (Boilerplate)](https://flairjs.com/templates/#/asm)
 ---
 
-FlairJS Fabric is a development framework built using [FlairJS](https://flairjs.com) for building apps using true object orientated features in plain vanilla JavaScript. 
+FlairJS Assembly (Boilerplate) is a development project structure to build [FlairJS](https://flairjs.com) assembly using true object orientated features in plain vanilla JavaScript.
 
-It provides the necessary building blocks to develop fullstack JavaScript apps for web, mobile, and serverless platforms. Find more about this [here](https://flairjs.com/fabric).
+It provides the optimized configuration settings for organizing and building FlairJS assemblies. Find more about this [here](https://flairjs.com/templates/#/asm).
 
 
 
