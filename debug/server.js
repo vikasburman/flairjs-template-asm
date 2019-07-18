@@ -1,3 +1,8 @@
-const flair = require('../dist/flair.js');
-console.log(`${flair.info.name} - v${flair.info.version} loaded!`);
-debugger;
+const flair = require('flairjs');
+const preamble = require('../dist/preamble.js');
+preamble(flair).then(() => {
+    console.log(`Assembly preamble loaded!`);
+    debugger;
+}).catch((err) => {
+    console.log(err);
+})

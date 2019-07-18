@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FlairJS Debug</title>
+    <title>Assembly Debug</title>
   </head>
   <body>
-    <script src="../dist/flair.js"></script>
-    <script type="text/javascript">
-      console.log(`${flair.info.name} - v${flair.info.version} loaded!`);
-      debugger;
+    <script type="module">
+      import * as m1 from '../node_modules/flairjs/flair.js';
+      import * as m2 from '../dist/preamble.js';
+      preamble(flair).then(() => {
+          document.body.innerText = 'Assembly preamble loaded!'
+          debugger;
+      }).catch((err) => {
+          console.log(err);
+          debugger;
+      })
     </script>
   </body>
 </html>

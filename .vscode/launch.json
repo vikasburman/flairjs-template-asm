@@ -9,8 +9,7 @@
             "request": "launch",
             "name": "Client Mode",
             "url": "http://localhost:8088/debug/client.html",
-            "webRoot": "${workspaceFolder}",
-            "postDebugTask": "stopserver"
+            "webRoot": "${workspaceFolder}"
         },
         {
             "type": "node",
