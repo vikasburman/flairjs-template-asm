@@ -1,25 +1,23 @@
 {
-    "name": "flairjs-template-asm",
-    "title": "FlairJS Assembly Project Template",
-    "description": "Boilerplate project structure for creating a flairjs assembly",
-    "copyright": "(c) 2017-2019 Vikas Burman",
-    "version": "0.9.6",
-    "author": "Vikas Burman <vikasburman@gmail.com>",
+    "name": "yourasm",
+    "title": "yourasm name",
+    "description": "yourasm description",
+    "copyright": "yourasm copyright",
+    "version": "0.9.7",
+    "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
+        "flairjs",
         "javascript",
-        "oops",
-        "javascript-framework",
-        "isomorphic-javascript"
+        "yourasm keyword1",
+        "yourasm keyword2"
     ],
     "engines": {
         "node": "12"
     },
     "license": "MIT",
-    "link": "https://flairjs.com",
-    "homepage": "https://flairjs.com",
     "repository": {
         "type": "git",
-        "url": "https://github.com/vikasburman/flairjs-template-asm.git"
+        "url": "yourapp giturl"
     },
     "scripts": {
         "build": "gulp build --options ./config/build.json",
