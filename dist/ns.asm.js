@@ -5,8 +5,8 @@
  * 
  * Assembly: ns.asm
  *     File: ./ns.asm.js
- *  Version: 0.9.5
- *  Mon, 15 Jul 2019 02:26:49 GMT
+ *  Version: 0.9.6
+ *  Thu, 18 Jul 2019 03:59:25 GMT
  * 
  * (c) 2017-2019 Vikas Burman
  * MIT
@@ -113,7 +113,7 @@
     AppDomain.context.current().currentAssemblyBeingLoaded('');
     
     // register assembly definition object
-    AppDomain.registerAdo('{"name":"ns.asm","file":"./ns.asm{.min}.js","mainAssembly":"","desc":"Boilerplate project structure for creating a flairjs assembly","title":"FlairJS Assembly Project Template","version":"0.9.5","lupdate":"Mon, 15 Jul 2019 02:26:49 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"(c) 2017-2019 Vikas Burman","license":"MIT","types":["ns.asm.ClassName1","ns.asm.something.ClassName2"],"resources":[],"assets":[],"routes":[]}');
+    AppDomain.registerAdo('{"name":"ns.asm","file":"./ns.asm{.min}.js","package":"flairjs-template-asm","desc":"Boilerplate project structure for creating a flairjs assembly","title":"FlairJS Assembly Project Template","version":"0.9.6","lupdate":"Thu, 18 Jul 2019 03:59:25 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"(c) 2017-2019 Vikas Burman","license":"MIT","types":["ns.asm.ClassName1","ns.asm.something.ClassName2"],"resources":[],"assets":[],"routes":[]}');
     
     // assembly load complete
     if (typeof onLoadComplete === 'function') { 
