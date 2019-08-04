@@ -1,7 +1,7 @@
 /**
  * @preserve
  * Preamble for assemblies at: ./
- * Created: Sun, 04 Aug 2019 00:45:51 GMT
+ * Created: Sun, 04 Aug 2019 00:46:19 GMT
  */
 (function(root, loader) {
     'use strict';
@@ -19,6 +19,6 @@
 })((this || globalThis), async function(flair) {
     'use strict';
 
-    await flair(JSON.parse('{"name":"ns.asm","file":"./ns.asm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.9.8","lupdate":"Sun, 04 Aug 2019 00:45:50 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["ns.asm.ClassName1","ns.asm.something.ClassName2"],"resources":[],"assets":[],"routes":[]}'));
+    await flair(JSON.parse('{"name":"ns.asm","file":"./ns.asm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.9.9","lupdate":"Sun, 04 Aug 2019 00:46:19 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["ns.asm.ClassName1","ns.asm.something.ClassName2"],"resources":[],"assets":[],"routes":[]}'));
 
 });
