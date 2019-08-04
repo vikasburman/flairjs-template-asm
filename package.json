@@ -34,7 +34,6 @@
         "del": "^5.0.0",
         "eslint": "^6.0.1",
         "fast-glob": "^3.0.4",
-        "flairjs": "^0.9.37",
         "fs-extra": "^8.1.0",
         "gulp": "^4.0.2",
         "html-minifier": "^4.0.0",
@@ -47,5 +46,7 @@
         "stylelint": "^10.1.0",
         "uglify-es": "^3.3.9"
     },
-    "dependencies": {}
+    "dependencies": {
+        "flairjs": "^0.9.38"
+    }
 }
