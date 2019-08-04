@@ -3,7 +3,7 @@
     "title": "yourasm name",
     "description": "yourasm description",
     "copyright": "yourasm copyright",
-    "version": "0.9.7",
+    "version": "0.9.8",
     "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
         "flairjs",
