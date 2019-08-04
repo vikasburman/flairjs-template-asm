@@ -3,7 +3,7 @@
     "title": "yourasm name",
     "description": "yourasm description",
     "copyright": "yourasm copyright",
-    "version": "0.9.9",
+    "version": "0.9.10",
     "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -12,7 +12,7 @@
         "yourasm keyword2"
     ],
     "engines": {
-        "node": "12"
+        "node": ">=10"
     },
     "license": "MIT",
     "repository": {
@@ -47,6 +47,6 @@
         "uglify-es": "^3.3.9"
     },
     "dependencies": {
-        "flairjs": "^0.9.38"
+        "flairjs": "^0.9.49"
     }
 }

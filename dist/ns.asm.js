@@ -5,8 +5,8 @@
  * 
  * Assembly: ns.asm
  *     File: ./ns.asm.js
- *  Version: 0.9.9
- *  Sun, 04 Aug 2019 00:46:19 GMT
+ *  Version: 0.9.10
+ *  Sun, 04 Aug 2019 04:25:10 GMT
  * 
  * yourasm copyright
  * MIT
@@ -113,7 +113,7 @@
     AppDomain.context.current().currentAssemblyBeingLoaded('');
     
     // register assembly definition object
-    AppDomain.registerAdo('{"name":"ns.asm","file":"./ns.asm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.9.9","lupdate":"Sun, 04 Aug 2019 00:46:19 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["ns.asm.ClassName1","ns.asm.something.ClassName2"],"resources":[],"assets":[],"routes":[]}');
+    AppDomain.registerAdo('{"name":"ns.asm","file":"./ns.asm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.9.10","lupdate":"Sun, 04 Aug 2019 04:25:10 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["ns.asm.ClassName1","ns.asm.something.ClassName2"],"resources":[],"assets":[],"routes":[]}');
     
     // assembly load complete
     if (typeof onLoadComplete === 'function') { 
