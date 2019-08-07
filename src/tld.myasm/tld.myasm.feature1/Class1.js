@@ -1,6 +1,6 @@
 /**
- * @name ClassName
- * @description Class Description
+ * @name Class1
+ * @description Class 1 Description
  */
 $$('ns', '(auto)');
 Class('(auto)', function() {

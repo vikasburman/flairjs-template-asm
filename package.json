@@ -3,7 +3,7 @@
     "title": "yourasm name",
     "description": "yourasm description",
     "copyright": "yourasm copyright",
-    "version": "0.9.10",
+    "version": "0.9.13",
     "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -17,16 +17,15 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "yourapp giturl"
+        "url": "yourasm giturl"
     },
     "scripts": {
         "build": "gulp build --options ./config/build.json",
         "build-full": "gulp build --full --options ./config/build.json",
         "build-quick": "gulp build --quick --options ./config/build.json",
         "test": "gulp test --TEST --options ./config/test.json",
-        "package": "gulp package --options ./config/pack.json && npm pack ./publish/package/npm",
-        "start": "http-server ./ -p8088 &",
-        "stop": "pkill -f http-server"
+        "serve": "http-server ./ -p8088 && pkill -f http-server",
+        "package": "gulp package --options ./config/pack.json && npm pack ./publish/package/npm"
     },
     "devDependencies": {
         "clean-css": "^4.2.1",
@@ -46,7 +45,8 @@
         "stylelint": "^10.1.0",
         "uglify-es": "^3.3.9"
     },
-    "dependencies": {
-        "flairjs": "^0.9.49"
-    }
+    "peerDependencies": {
+        "flairjs": "^0.9.81"
+    },
+    "dependencies": {}
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Client</title>
+    <link rel="shortcut icon" href="./favicon.png">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+  </head>
+  <body>
+      <div class="center">
+        <div class="card">
+          <div class="additional">
+            <div class="user-card">
+              <div class="level center none">
+                {{ title }}
+              </div>
+              <div class="points center small">
+                v{{ version }}
+              </div>
+              <img class="center" width="50" height="50" src="./favicon.png"/>
+            </div>
+            <div class="more-info">
+              <h1>{{ name }}</h1>
+              <div class="coords">
+                <span>License</span>
+                <span>Released</span>
+              </div>
+              <div class="coords"><small>
+                <span><a target="_blank" href="{{ licenseLink }}">{{ license }}</a></span>
+                <span>{{ lupdate }}</span></small>
+              </div>
+              <p></p>
+              <div class="coords">
+                  <span>Assemblies</span>
+                  <span>Depends</span>
+              </div>
+              <div class="coords"><small>
+                  <span><a target="_blank" href="{{ folderLink }}">{{ assemblies }}</a></span>
+                  <span>flairjs - ^{{ depends_on }}</span></small>
+              </div>
+              <p></p>
+              <div class="coords">
+                  <span>Members</span>
+              </div>
+              <div class="coords"><small>
+                  <span>{{ assemblies_members }}</span></small>
+              </div>
+
+              <div class="stats">
+                <div>
+                    <div class="title none"><a target="_blank" href="{{ web }}">Website</a></div>
+                  </div>
+                  <div>
+                    <div class="title none"><a target="_blank" href="{{ git }}">GitHub</a></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h1>{{ name }}</h1>
+            <p class="center-text">{{ desc }}</p>
+            <span class="more">more info</span>
+          </div>
+        </div>
+      </div>
+      
+      <script type="module">
+        import * as m1 from '../../node_modules/flairjs/flair.js';
+        import * as m2 from '../../dist/preamble.js';
+        preamble(flair).then(() => {
+          let info = null;
+          
+          const asms = flair.AppDomain.allAdos();
+          const members = {
+            asmNames: '',
+            asmCount: 0,
+            typeCount: 0,
+            resCount: 0,
+            astCount: 0,
+            routeCount: 0
+          };
+          for(let asm of asms) {
+            let asmInfo = flair.AppDomain.getAdo(asm);
+            if (asmInfo.name === 'flair') { continue; }
+            if (info === null) { info = asmInfo; } // pick first
+            members.asmNames += asmInfo.name + ', ';
+            members.typeCount += asmInfo.types.length;
+            members.resCount += asmInfo.resources.length;
+            members.astCount += asmInfo.assets.length;
+            members.routeCount += asmInfo.routes.length;
+          }
+          members.asmNames = members.asmNames.substr(0, members.asmNames.length - 2); // remove last ','
+
+          const data = { 
+            depends_on: flair.info.version, 
+            name: info.package,
+            title: info.title,
+            version: info.version,
+            desc: info.desc,
+            license: info.license,
+            lupdate: new Date(info.lupdate).toDateString(),
+            licenseLink: 'https://raw.githubusercontent.com/vikasburman/flairjs-template-asm/master/LICENSE',
+            web: 'https://flairjs.com/templates/#asm',
+            git: 'https://github.com/vikasburman/flairjs-template-asm',
+            folderLink: '../../dist/',
+            assemblies: members.asmNames,
+            assemblies_members: `Types: ${members.typeCount}, Resources: ${members.resCount}, Assets: ${members.astCount}, Routes: ${members.routeCount}`
+          };
+
+          document.body.innerHTML = document.body.innerHTML.replace(/\{\{\s?(\w+)\s?\}\}/g, (match, variable) => {
+            return data[variable] || ''
+          });
+          document.title = info.title + ' Debug';
+        }).catch((err) => {
+            console.log(err);
+        })
+      </script>      
+  </body>
+</html>
