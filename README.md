@@ -1,9 +1,9 @@
-[FlairJS Assembly Boilerplate](https://flairjs.com/templates/#asm)
+[FlairJS Assembly Boilerplate](https://flairjs.com/templates#asm)
 ---
 
 FlairJS Assembly Boilerplate is a development project structure to build [FlairJS](https://flairjs.com) assembly using true object orientated features in plain vanilla JavaScript.
 
-It provides the optimized configuration settings for organizing and building FlairJS assemblies. Find more about this [here](https://flairjs.com/templates/#asm).
+It provides the optimized configuration settings for organizing and building FlairJS assemblies. Find more about this [here](https://flairjs.com/templates#asm).
 
 
 
