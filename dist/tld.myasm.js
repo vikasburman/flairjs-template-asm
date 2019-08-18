@@ -5,8 +5,8 @@
  * 
  * Assembly: tld.myasm
  *     File: ./tld.myasm.js
- *  Version: 0.9.13
- *  Wed, 07 Aug 2019 21:11:42 GMT
+ *  Version: 0.9.14
+ *  Sun, 18 Aug 2019 22:32:33 GMT
  * 
  * yourasm copyright
  * MIT
@@ -37,7 +37,7 @@
             getTypeName, typeOf, dispose, using, Args, Exception, noop, nip, nim, nie, event } = flair;
     const { TaskInfo } = flair.Tasks;
     const { env } = flair.options;
-    const { guid, forEachAsync, replaceAll, splitAndTrim, findIndexByProp, findItemByProp, which, isArrowFunc, isASyncFunc, sieve,
+    const { guid, stuff, replaceAll, splitAndTrim, findIndexByProp, findItemByProp, which, isArrowFunc, isASyncFunc, sieve,
             deepMerge, getLoadedScript, b64EncodeUnicode, b64DecodeUnicode, lens, globalSetting } = flair.utils;
     
     // inbuilt modifiers and attributes compile-time-safe support
@@ -113,7 +113,7 @@
     AppDomain.context.current().currentAssemblyBeingLoaded('');
     
     // register assembly definition object
-    AppDomain.registerAdo('{"name":"tld.myasm","file":"./tld.myasm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.9.13","lupdate":"Wed, 07 Aug 2019 21:11:42 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["tld.myasm.feature1.Class1","tld.myasm.feature2.Class2"],"resources":[],"assets":[],"routes":[]}');
+    AppDomain.registerAdo('{"name":"tld.myasm","file":"./tld.myasm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.9.14","lupdate":"Sun, 18 Aug 2019 22:32:33 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["tld.myasm.feature1.Class1","tld.myasm.feature2.Class2"],"resources":[],"assets":[],"routes":[]}');
     
     // assembly load complete
     if (typeof onLoadComplete === 'function') { 
