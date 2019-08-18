@@ -3,7 +3,7 @@
     "title": "yourasm name",
     "description": "yourasm description",
     "copyright": "yourasm copyright",
-    "version": "0.9.14",
+    "version": "0.9.15",
     "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -33,7 +33,7 @@
         "del": "^5.0.0",
         "eslint": "^6.0.1",
         "fast-glob": "^3.0.4",
-        "flairjs": "^0.55.51",
+        "flairjs": "^0.55.55",
         "fs-extra": "^8.1.0",
         "gulp": "^4.0.2",
         "html-minifier": "^4.0.0",
@@ -47,7 +47,7 @@
         "uglify-es": "^3.3.9"
     },
     "peerDependencies": {
-        "flairjs": "^0.55.51"
+        "flairjs": "^0.55.55"
     },
     "dependencies": {}
 }
