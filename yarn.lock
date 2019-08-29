@@ -782,7 +782,7 @@ debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@^3.2.6:
+debug@^3.0.0:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
@@ -1376,10 +1376,10 @@ find-up@^2.0.0:
   dependencies:
     locate-path "^2.0.0"
 
-flairjs-cli@^0.55.86:
-  version "0.55.86"
-  resolved "https://registry.yarnpkg.com/flairjs-cli/-/flairjs-cli-0.55.86.tgz#7242aef0fdc884da2ca37504504f2828c9ddcbdf"
-  integrity sha512-XE/knDV4VfAcygaufzOGrIyxoW+co5qBiT6ihrBIycKIjYHoys/TRotZ/Ex0/YlL3HsldYsskjxQpUBg2rdndw==
+flairjs-cli@^0.55.87:
+  version "0.55.87"
+  resolved "https://registry.yarnpkg.com/flairjs-cli/-/flairjs-cli-0.55.87.tgz#d214daf5780930fde69bbd6500bac1a4ce294048"
+  integrity sha512-88LehOZXe1E5ww8gqfyLQAWogf+2NzUKD1UHsCzHOms8t3r8J0YdtyqXsYeb0T4VIaLJUZDDyDgJgS6ESxmrVA==
   dependencies:
     clean-css "^4.2.1"
     copy-dir "^1.1.0"
@@ -1412,11 +1412,11 @@ flatted@^2.0.0:
   integrity sha512-a1hQMktqW9Nmqr5aktAux3JMNqaucxGcjtjWnZLHX7yyPCmlSV3M54nGYbqT8K+0GhF3NBgmJCc3ma+WOgX8Jg==
 
 follow-redirects@^1.0.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
-  integrity sha512-m/pZQy4Gj287eNy94nivy5wchN3Kp+Q5WgUPNy5lJSZ3sgkVKSYV/ZChMAQVIgx1SqfZ2zBZtPA2YlXIWxxJOQ==
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.8.1.tgz#24804f9eaab67160b0e840c085885d606371a35b"
+  integrity sha512-micCIbldHioIegeKs41DoH0KS3AXfFzgS30qVkM6z/XOE/GJgvmsoc839NUqa1B9udYe9dQxgv7KFwng6+p/dw==
   dependencies:
-    debug "^3.2.6"
+    debug "^3.0.0"
 
 for-in@^1.0.2:
   version "1.0.2"
