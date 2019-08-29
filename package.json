@@ -3,7 +3,7 @@
     "title": "yourasm name",
     "description": "yourasm description",
     "copyright": "yourasm copyright",
-    "version": "0.9.17",
+    "version": "0.9.18",
     "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -29,10 +29,10 @@
         "serve": "http-server ./ -p8088 && pkill -f http-server"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.55.85",
+        "flairjs-cli": "^0.55.86",
         "http-server": "^0.11.1"
     },
     "peerDependencies": {
-        "flairjs": "^0.55.68"
+        "flairjs": "^0.55.73"
     }
 }
