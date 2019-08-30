@@ -33,6 +33,6 @@
         "http-server": "^0.11.1"
     },
     "peerDependencies": {
-        "flairjs": "^0.55.74"
+        "flairjs": "^0.55.73"
     }
 }
