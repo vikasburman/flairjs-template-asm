@@ -31,7 +31,7 @@
               <p></p>
               <div class="coords">
                   <span>Assemblies</span>
-                  <span>Depends</span>
+                  <span>Requires</span>
               </div>
               <div class="coords"><small>
                   <span><a target="_blank" href="{{ folderLink }}">{{ assemblies }}</a></span>
@@ -81,8 +81,7 @@
             astCount: 0,
             routeCount: 0
           };
-          for(let asm of asms) {
-            let asmInfo = flair.AppDomain.getAdo(asm);
+          for(let asmInfo of asms) {
             if (asmInfo.name === 'flair') { continue; }
             if (info === null) { info = asmInfo; } // pick first
             members.asmNames += asmInfo.name + ', ';
@@ -105,7 +104,7 @@
             web: 'https://flairjs.com/templates#asm',
             git: 'https://github.com/vikasburman/flairjs-template-asm',
             folderLink: '../../dist/',
-            assemblies: members.asmNames,
+            assemblies: asms.length - 1, // 1 is flairjs
             assemblies_members: `Types: ${members.typeCount}, Resources: ${members.resCount}, Assets: ${members.astCount}, Routes: ${members.routeCount}`
           };
 

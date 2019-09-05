@@ -3,7 +3,7 @@
     "title": "yourasm name",
     "description": "yourasm description",
     "copyright": "yourasm copyright",
-    "version": "0.9.20",
+    "version": "0.59.0",
     "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -30,10 +30,10 @@
         "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn add flairjs-cli --dev && yarn add flairjs --peer"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.55.92",
+        "flairjs-cli": "^0.59.0",
         "http-server": "^0.11.1"
     },
     "peerDependencies": {
-        "flairjs": "^0.55.78"
+        "flairjs": "^0.59.0"
     }
 }
