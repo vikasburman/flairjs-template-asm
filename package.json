@@ -3,7 +3,7 @@
     "title": "yourasm name",
     "description": "yourasm description",
     "copyright": "yourasm copyright",
-    "version": "0.59.1",
+    "version": "0.59.2",
     "author": "yourasm author <yourasm@yourhost.domain>",
     "keywords": [
         "flairjs",
@@ -27,10 +27,11 @@
         "test": "flair test",
         "test-client": "flair test --client",
         "serve": "http-server ./ -p8088 && pkill -f http-server",
-        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn add flairjs-cli --dev && yarn add flairjs --peer"
+        "refresh": "yarn remove flairjs-cli && yarn remove flairjs && yarn add flairjs-cli --dev && yarn add flairjs --peer && yarn add flairjs --dev"
     },
     "devDependencies": {
-        "flairjs-cli": "^0.60.0",
+        "flairjs": "^0.59.0",
+        "flairjs-cli": "^0.60.4",
         "http-server": "^0.11.1"
     },
     "peerDependencies": {

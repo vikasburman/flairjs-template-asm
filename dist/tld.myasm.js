@@ -5,8 +5,8 @@
  * 
  * Assembly: tld.myasm
  *     File: ./tld.myasm.js
- *  Version: 0.59.1
- *  Sat, 07 Sep 2019 20:06:52 GMT
+ *  Version: 0.59.2
+ *  Sun, 08 Sep 2019 01:21:54 GMT
  * 
  * yourasm copyright
  * MIT
@@ -87,7 +87,7 @@
          * @description Class 1 Description
          */
         $$('ns', 'tld.myasm.feature1');
-        Class('Class1', function() {
+		Class('Class1' ,function() {
             // class implementation
         });
         
@@ -98,7 +98,7 @@
          * @description Class 2 Description
          */
         $$('ns', 'tld.myasm.feature2');
-        Class('Class2', function() {
+		Class('Class2' ,function() {
             // class implementation
         });
         
@@ -113,7 +113,7 @@
     AppDomain.context.current().currentAssemblyBeingLoaded();
     
     // register assembly definition object
-    AppDomain.registerAdo('{"name":"tld.myasm","file":"./tld.myasm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.59.1","lupdate":"Sat, 07 Sep 2019 20:06:52 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["tld.myasm.feature1.Class1","tld.myasm.feature2.Class2"],"resources":[],"assets":[],"routes":[]}');
+    AppDomain.registerAdo('{"name":"tld.myasm","file":"./tld.myasm{.min}.js","package":"yourasm","desc":"yourasm description","title":"yourasm name","version":"0.59.2","lupdate":"Sun, 08 Sep 2019 01:21:54 GMT","builder":{"name":"flairBuild","version":"1","format":"fasm","formatVersion":"1","contains":["init","func","type","vars","reso","asst","rout","sreg"]},"copyright":"yourasm copyright","license":"MIT","types":["tld.myasm.feature1.Class1","tld.myasm.feature2.Class2"],"resources":[],"assets":[],"routes":[]}');
     
     // assembly load complete
     if (typeof onLoadComplete === 'function') { 
